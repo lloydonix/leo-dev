@@ -1,0 +1,39 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    background-color: antiquewhite;
+}
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.container div{
+    margin-top: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
