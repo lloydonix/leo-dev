@@ -1,0 +1,16 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "Write-Error": true,
+        "from": true,
+        "text": true,
+        "print(repr(text[-200:]))": true,
+        "repr(text[-200:])": true,
+        "text[-200:]": true,
+        "print('LEN',": true,
+        "PY": true,
+        "/^cd \"c:\\\\Users\\\\User\\\\Documents\\\\VS Code\\\\leo-dev\\\\leo-dev\"; python -c \"from pathlib import Path; text = Path\\('index\\.html'\\)\\.read_text\\(encoding='utf-8'\\); print\\(repr\\(text\\[-200:\\]\\)\\); print\\('LEN', len\\(text\\)\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

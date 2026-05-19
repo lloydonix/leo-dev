@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyd Portfolio Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="blog-page">
+    <div class="container">
+        <header class="header">
+            <h1>Blog</h1>
+            <nav class="header-nav">
+                <a href="index.html">← Back to Home</a>
+            </nav>
+        </header>
+
+        <section class="main">
+            <div class="main-grid">
+                            <h2>Write a Blog Post</h2>
+            <form id="blog-form" class="blog-form">
+                <div class="form-group">
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" name="title" placeholder="Post title" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Content</label>
+                    <textarea id="post-content" name="content" rows="8" placeholder="Write your blog content here..." required></textarea>
+                </div>
+                <button type="submit">Publish Post</button>
+                <p id="form-message" class="form-message" aria-live="polite"></p>
+            </form>
+            </div>
+        </section>
+
+        <section class="submain fade-left fade-in-on-enter">
+            <h2>Latest Story</h2>
+            <p>This is placeholder content for a blog post. Use this space to talk about a recent project, workflow, or design decision that matters to your portfolio audience.</p>
+            <p>The blog can include project breakdowns, process notes, code snippets, and reflections on the work you’re proud to share.</p>
+        </section>
+
+        <section class="submain fade-right fade-in-on-enter">
+            <h2>Next Post</h2>
+            <p>Future posts can cover product launches, case studies, or lessons learned while building digital experiences for clients and personal projects.</p>
+        </section>
+
+        <section class="submain fade-left fade-in-on-enter">
+
+        </section>
+
+        <section class="footer">
+            <p>Copyright © 2024 Lloyd Portfolio. All rights reserved.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

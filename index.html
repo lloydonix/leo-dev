@@ -3,54 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo OS - Intro</title>
+    <title>Lloyd Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <h1>Leo OS</h1>
+            <h1>Lloyd Portfolio</h1>
             <nav class="header-nav">
                 <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Contact</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="blog.html">Blog</a>
             </nav>
         </header>
         
-        <section class="sidebar">
-            <p>this is a sidebar</p>
-        </section>
         <section class="main">
             <div class="main-grid">
-                <div class="main-copy">
-                    <p>This is the introductory page for Leo OS.</p>
-                    <div class="tile-grid">
-                        <a href="#" class="tile">Portfolio</a>
-                        <a href="#" class="tile">Random</a>
-                        <a href="#" class="tile">Sample</a>
-                    </div>
+                <img src="/images/corpo.jpg" alt="Corpo" class="corpo fade-left">
+                <div class="textbox fade-right">
+                    <h2>Hi, I'm Lloyd</h2>
+                    <p>I craft modern digital experiences for products, brands, and creators. My work blends clear design, fast code, and thoughtful storytelling.</p>
                 </div>
-
-                <img src="/images/corpo.jpg" alt="Corpo" class="corpo">
             </div>
         </section>
 
-        <section class="submain">
-            <p>This is the submain content area.</p>
-            <h1>Playlist</h1>
-            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ph/playlist/illit-discography/pl.u-06ox78gCYE853Nd"></iframe>
+        <section id="gallery" class="submain fade-right fade-in-on-enter">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">Gallery Item 1</div>
+                <div class="gallery-card">Gallery Item 2</div>
+                <div class="gallery-card">Gallery Item 3</div>
+                <div class="gallery-card">Gallery Item 4</div>
+            </div>
+        </section>
+
+        <section id="about" class="submain fade-left fade-in-on-enter">
+            <h2>About Me</h2>
+            <p>I'm a portfolio-focused designer and developer with experience building landing pages, dashboards, and interactive brand experiences. I love turning ideas into polished digital products that feel simple and memorable.</p>
+            <p>My toolkit includes frontend development, visual design, user experience, and creative direction. I enjoy collaborating with teams and shipping work that people actually want to use.</p>
+        </section>
+
+        <section id="projects" class="submain fade-right fade-in-on-enter">
+            <h2>Selected Projects</h2>
+            <div class="project-list">
+                <article class="project-card">
+                    <h3>Studio Launch Platform</h3>
+                    <p>Brand identity, website design, and animated launch experience for a creative studio.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Music Discovery App</h3>
+                    <p>Responsive app interface for discovering playlists, artists, and curated listening sessions.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Product Dashboard</h3>
+                    <p>Analytics dashboard for tracking growth metrics, user behavior, and engagement insights.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="submain fade-left fade-in-on-enter">
+            <h2>Get in Touch</h2>
+            <p>Interested in working together? Send a message with your project details and I’ll get back to you soon.</p>
+            <p>Email: hello@lloydportfolio.com</p>
         </section>
 
         <section class="footer">
-            <p>Copyright © 2024 Leo OS. All rights reserved.</p>
+            <p>Copyright © 2024 Lloyd Portfolio. All rights reserved.</p>
         </section>
 
       
   
     
+    
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
