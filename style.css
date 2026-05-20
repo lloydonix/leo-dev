@@ -46,6 +46,10 @@
 
 .main {
     grid-area: main;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-grid {
@@ -54,27 +58,29 @@
     gap: 40px;
     align-items: center;
     justify-items: center;
+    width: 100%;
 }
 
 .textbox {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 24px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
     padding: 40px 32px;
     min-height: 220px;
     width: 100%;
     max-width: 520px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    color: rgb(255, 255, 255);
 }
 
 .textbox p {
     font-size: 2rem;
     margin: 0;
-    color: #303030;
     font-weight: 700;
 }
 
@@ -113,22 +119,22 @@
 
 .corpo {
     display: block;
-    width: clamp(240px, 35vw, 450px);
+    width: clamp(360px, 55vw, 820px);
     max-width: 100%;
     height: auto;
     border-radius: 0;
     margin: 20px 0 0 auto;
-    filter: drop-shadow(20px 20px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(10px 5px 5px #2d3ba178);
 }
 
 body {
-    color: rgb(52, 52, 52);
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background:
     radial-gradient(circle at top left, #83b3ff, transparent 40%),
-    linear-gradient(to bottom, #366cea, #163a88);
+    linear-gradient(to bottom, #4745bc, #132167);
 }
 
 .blog-page {
