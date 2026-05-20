@@ -56,15 +56,6 @@
     justify-items: center;
 }
 
-.corpo {
-    display: block;
-    width: clamp(240px, 35vw, 400px);
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-    margin: 0;
-}
-
 .textbox {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -83,7 +74,7 @@
 .textbox p {
     font-size: 2rem;
     margin: 0;
-    color: #ffffff;
+    color: #303030;
     font-weight: 700;
 }
 
@@ -125,18 +116,19 @@
     width: clamp(240px, 35vw, 450px);
     max-width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 0;
     margin: 20px 0 0 auto;
+    filter: drop-shadow(20px 20px 10px rgba(0,0,0,0.5));
 }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(52, 52, 52);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background:
-    radial-gradient(circle at top left, #3b82f6, transparent 40%),
-    linear-gradient(to bottom, #0f172a, #111827);
+    radial-gradient(circle at top left, #83b3ff, transparent 40%),
+    linear-gradient(to bottom, #366cea, #163a88);
 }
 
 .blog-page {
