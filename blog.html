@@ -18,35 +18,39 @@
 
         <section class="main">
             <div class="main-grid">
-                            <h2>Write a Blog Post</h2>
-            <form id="blog-form" class="blog-form">
-                <div class="form-group">
-                    <label for="post-title">Title</label>
-                    <input type="text" id="post-title" name="title" placeholder="Post title" required>
+                <div class="textbox fade-right">
+                    <h2>Blog posts by HTML</h2>
+                    <p>Add new entries directly in this file under the blog post section. Use the visible template below so each post stays consistent.</p>
                 </div>
-                <div class="form-group">
-                    <label for="post-content">Content</label>
-                    <textarea id="post-content" name="content" rows="8" placeholder="Write your blog content here..." required></textarea>
-                </div>
-                <button type="submit">Publish Post</button>
-                <p id="form-message" class="form-message" aria-live="polite"></p>
-            </form>
             </div>
         </section>
 
         <section class="submain fade-left fade-in-on-enter">
-            <h2>Latest Story</h2>
-            <p>This is placeholder content for a blog post. Use this space to talk about a recent project, workflow, or design decision that matters to your portfolio audience.</p>
-            <p>The blog can include project breakdowns, process notes, code snippets, and reflections on the work you’re proud to share.</p>
+            <h2>Blog posts</h2>
+            <div class="blog-posts">
+                <!-- Add new posts below this comment using the template:
+                     <article class="blog-post">
+                         <h3>Post title</h3>
+                         <p class="post-date">Month Day, Year</p>
+                         <p>Write your blog content here. Use paragraphs, lists, or code snippets as needed.</p>
+                     </article>
+                -->
+
+                <article class="blog-post">
+                    <h3>How to add a new post</h3>
+                    <p class="post-date">May 25, 2026</p>
+                    <p>This page now uses static blog entries instead of input fields. Edit <strong>blog.html</strong> and paste the article template inside the blog posts section.</p>
+                </article>
+            </div>
         </section>
 
-        <section class="submain fade-right fade-in-on-enter">
-            <h2>Next Post</h2>
-            <p>Future posts can cover product launches, case studies, or lessons learned while building digital experiences for clients and personal projects.</p>
-        </section>
-
-        <section class="submain fade-left fade-in-on-enter">
-
+        <section class="submain fade-right fade-in-on-enter blog-template">
+            <h2>Blog entry template</h2>
+            <pre><code>&lt;article class="blog-post"&gt;
+  &lt;h3&gt;Your post title&lt;/h3&gt;
+  &lt;p class="post-date"&gt;Month Day, Year&lt;/p&gt;
+  &lt;p&gt;Your blog text goes here.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
         </section>
 
         <section class="footer">
