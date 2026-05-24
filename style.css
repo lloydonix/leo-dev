@@ -1,7 +1,12 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -11,12 +16,22 @@
     grid-area: header;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 10;
+    width: calc(100% + 40px);
+    margin: 0 -20px 0 -20px;
+    box-sizing: border-box;
+    background-color: #000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.header h1,
+.header-nav a {
+    color: rgb(255, 255, 255);
 }
 
 .header-nav {
@@ -25,7 +40,6 @@
 }
 
 .header-nav a {
-    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 600;
 }
@@ -52,25 +66,38 @@
 }
 
 .textbox {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 24px;
     padding: 40px 32px;
     min-height: 220px;
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+    margin-right: 10%
+}
+
+
+
+.section-divider {
+    width: 100%;
+    max-width: none;
+    border: none;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    margin: 24px 0 0;
 }
 
 .textbox p {
     font-size: 2rem;
     margin: 0;
     font-weight: 700;
+    color: rgb(0, 0, 0);
 }
 
 .submain {
@@ -78,13 +105,15 @@
     padding: 60px 0;
     border-radius: 0;
     box-shadow: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: rgb(129, 129, 129);
-    color: rgb(255, 255, 255);
+    background-color: #f0f0ee;
+    color: rgb(0, 0, 0);
 }
 
 .container h1 {
@@ -101,27 +130,27 @@
     width: clamp(360px, 55vw, 820px);
     max-width: 100%;
     height: auto;
-    border-radius: 0;
+    border-radius: 100%;
     margin: 20px 0 0 auto;
     filter: drop-shadow(10px 5px 5px #2d3ba178);
 }
 
+html,
 body {
-    color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background:
-    radial-gradient(circle at top left, #83b3ff, transparent 40%),
-    linear-gradient(to bottom, #4745bc, #132167);
+    padding: 0;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: "Gelasio", serif;
+    background: #f8f8f5;
 }
 
 .blog-page {
-    background:
-    radial-gradient(circle at top right, rgba(255, 149, 165, 0.35), transparent 35%),
-    linear-gradient(to bottom, #1f114c, #090918);
+    background: #f8f8f5;
+    linear-gradient: (to bottom, #1f114c, #090918);
 }
-
 .fade-in-on-enter,
 .icon,
 .fade-left,
@@ -156,11 +185,19 @@ body {
 }
 
 .project-card {
-    background: transparent;
-    border: none;
-    border-radius: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
     padding: 16px 0;
     box-shadow: none;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
 }
 
 .gallery-grid {
@@ -233,6 +270,8 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+        width: calc(100% + 32px);
+        margin: 0 -16px 0 -16px;
         padding: 0 16px 16px;
     }
 
@@ -273,6 +312,7 @@ body {
     .gallery-card,
     .project-card {
         border-radius: 14px;
+            background: rgba(255, 255, 255, 0.95);
     }
 
     .textbox {
