@@ -34,42 +34,42 @@
     text-decoration: underline;
 }
 
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr);
     gap: 40px;
     align-items: center;
     justify-items: center;
-}
-
-.corpo {
-    display: block;
-    width: clamp(240px, 35vw, 400px);
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-    margin: 0;
+    width: 100%;
 }
 
 .textbox {
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    padding: 24px 0;
-    min-height: auto;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    padding: 40px 32px;
+    min-height: 220px;
     width: 100%;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: none;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
 }
 
 .textbox p {
     font-size: 2rem;
     margin: 0;
-    color: #ffffff;
     font-weight: 700;
 }
 
@@ -98,11 +98,12 @@
 
 .corpo {
     display: block;
-    width: clamp(240px, 35vw, 450px);
+    width: clamp(360px, 55vw, 820px);
     max-width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 0;
     margin: 20px 0 0 auto;
+    filter: drop-shadow(10px 5px 5px #2d3ba178);
 }
 
 body {
@@ -111,8 +112,8 @@ body {
     margin: 0;
     padding: 20px;
     background:
-    radial-gradient(circle at top left, #3b82f6, transparent 40%),
-    linear-gradient(to bottom, #0f172a, #111827);
+    radial-gradient(circle at top left, #83b3ff, transparent 40%),
+    linear-gradient(to bottom, #4745bc, #132167);
 }
 
 .blog-page {
